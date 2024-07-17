@@ -68,7 +68,6 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   # Enforcear estilo de codigo
-  gem 'rubocop', require: false
   gem 'rubocop-rails'
   # Para documentar nuestro código 
   gem 'yard'
