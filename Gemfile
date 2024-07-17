@@ -26,9 +26,15 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Gemfile for gmail
+gem 'gmail', '~> 0.6.0'
+# Best use of Credentials for a better security
+
+gem 'dotenv-rails', groups: [:development, :test]
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
-
+# Gema de rubocop para el proyecto
+gem 'rubocop', require: false
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
