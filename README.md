@@ -102,11 +102,12 @@ def verify_email(email_to_verify)
   gmail.logout
   messages.any?
 end
+```
 # Principios SOLID Aplicados
 
-## 1. Principio de Responsabilidad Única (SRP)
+ 1. Principio de Responsabilidad Única (SRP)
 
-Se ha creado una clase de servicio `GmailService` para manejar la lógica de conexión y verificación de correos electrónicos de Gmail, separando así la lógica de negocio del controlador.
+-Se ha creado una clase de servicio `GmailService` para manejar la lógica de conexión y verificación de correos electrónicos de Gmail, separando así la lógica de negocio del controlador.
 
 ### Fragmento de Código:
 ```ruby
