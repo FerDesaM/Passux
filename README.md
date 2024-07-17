@@ -93,7 +93,7 @@ host    all             all             ::1/128                 md5
 
 ## 1. Nombres de Métodos y Variables Descriptivos
 Se utilizan nombres claros y descriptivos para métodos y variables, lo que facilita la comprensión del código.
-
+Se hace uso de indentacion correcta para que este sea entendible.
 ### Ejemplo:
 ```ruby
 def verify_email(email_to_verify)
