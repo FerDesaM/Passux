@@ -88,5 +88,8 @@ host    all             all             ::1/128                 md5
   sudo systemctl restart postgresql
 ```
 - Ahora podemos hacer `bin/rails db:setup` `bin/rails db:s`
+
+## Practicas a utilizar al momento de escribir el codigo
+- Practicas que se utilizaran al momento de escribir el codigo
 ## Principios de solid a usar
 - Se hara un listado de los principios SOLID que se usara en este fork.
