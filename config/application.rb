@@ -7,6 +7,9 @@ require "rails/all"
 Bundler.require(*Rails.groups)
 
 module Passux
+  #
+  # Aplicacion principal
+  #
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
@@ -21,6 +24,9 @@ module Passux
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
+    config.autoload_paths += %W(#{config.root}/app/web/controllers)
+    config.eager_load_paths += %W(#{config.root}/app/web/controllers)
+
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
   end

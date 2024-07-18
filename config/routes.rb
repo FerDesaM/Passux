@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  namespace :web do
+    resources :users, only: [:new, :create] do
+      member do
+        get 'verify'
+        post 'confirm_verification'
+      end
+    end
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
+    root 'users#new' # Aquí debería apuntar a 'web/users#new' pero ya lo ajustaste.
+  end
+
   get "up" => "rails/health#show", as: :rails_health_check
-
-  # Defines the root path route ("/")
-  # root "posts#index"
-  # Use of gmail.verification
-  get 'gmail/verify_email', to: 'gmail#verify_email'
 end

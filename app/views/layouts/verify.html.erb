@@ -1,0 +1,11 @@
+<!-- app/views/users/verify.html.erb -->
+<h1>Verifica tu cuenta</h1>
+<%= form_with url: confirm_verification_user_path(@user), method: :post, local: true do |form| %>
+  <div class="field">
+    <%= form.label :validation_code, 'Código de Validación' %>
+    <%= form.text_field :validation_code %>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Verificar' %>
+  </div>
+<% end %>

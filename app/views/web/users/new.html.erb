@@ -1,0 +1,15 @@
+<!-- app/views/web/users/new.html.erb -->
+<h1>Registro de Usuario</h1>
+<%= form_with(model: @user, url: web_users_path, method: :post) do |form| %>
+  <!-- Campos del formulario (email, password, etc.) -->
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+  
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+  
+  <%= form.label :password_confirmation %>
+  <%= form.password_field :password_confirmation %>
+  
+  <%= form.submit 'Registrar' %>
+<% end %>

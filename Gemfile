@@ -8,6 +8,8 @@ gem "rails", "~> 7.1.3", ">= 7.1.3.4"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# Gemfile for gmail
+gem 'gmail', '~> 0.6.0'
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
@@ -26,15 +28,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# Gemfile for gmail
-gem 'gmail', '~> 0.6.0'
-# Best use of Credentials for a better security
-
-gem 'dotenv-rails', groups: [:development, :test]
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
-# Gema de rubocop para el proyecto
-gem 'rubocop', require: false
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -68,6 +64,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   # Enforcear estilo de codigo
+  gem 'rubocop', require: false
   gem 'rubocop-rails'
   # Para documentar nuestro código 
   gem 'yard'
